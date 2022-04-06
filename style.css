@@ -7,6 +7,7 @@ body {
 header {
   flex-direction: row;
   justify-content: flex-end;
+  box-shadow: #ffaa00 30;
 }
 .image--logo {
   justify-content: flex-start;
@@ -18,7 +19,9 @@ button {
   color: #000;
   border-radius: 0 45 45 45;
 }
-
 figure {
   flex-direction: row;
+}
+figure > img {
+  margin: 20px;
 }
