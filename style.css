@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+header {
+  flex-direction: row;
+  justify-content: flex-end;
+  box-shadow: #ffaa00 30;
+}
+.image--logo {
+  justify-content: flex-start;
+  size: 1rem;
+}
+button {
+  margin: 3px solid #ffaa00;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0 45 45 45;
+}
+figure {
+  flex-direction: row;
+}
+figure > img {
+  margin: 20px;
+}
