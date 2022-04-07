@@ -4,24 +4,68 @@
 body {
   font-family: "Nunito", sans-serif;
 }
+:root {
+  --orange: #ffaa00;
+  --black: #000;
+  --white: #fff;
+}
 header {
+  display: flex;
+  flex-direction: space-between;
+}
+.head--links {
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  box-shadow: #ffaa00 30;
+  box-shadow: var(--orange) 60;
+}
+.head--links > * {
+  margin: 15px;
 }
 .image--logo {
   justify-content: flex-start;
-  size: 1rem;
 }
 button {
-  margin: 3px solid #ffaa00;
-  background-color: #fff;
-  color: #000;
-  border-radius: 0 45 45 45;
+  margin: 5px solid var(--orange);
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 0 45px 45px 45px;
+  size: 20px;
+}
+section > div {
+  display: flex;
+  flex-direction: row;
 }
 figure {
+  display: flex;
   flex-direction: row;
 }
 figure > img {
   margin: 20px;
+  border-radius: 45px;
+}
+.container--text-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+h1 {
+  margin: 80px auto auto 20px;
+  font-size: 30px;
+  color: var(--orange);
+}
+h1 ~ p {
+  margin: 20px auto auto 20px;
+  font-size: 80px;
+  font-style: bold;
+  color: var(--black);
+}
+h3 {
+  font-size: 40px;
+  font-style: bold;
+  color: var(--white);
+}
+h4 {
+  font-size: 25px;
+  color: var(--white);
 }
